@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World：博客跑通了</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="../index.html">文曜的博客</a></h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="back-link" href="../index.html">← 返回文章列表</a>
+    <article class="post-content">
+      <h1>Hello World：博客跑通了</h1>
+      <p class="post-date">2026-09-18</p>
+      <p>这是博客的第一篇文章。整套流程很轻：</p>
+      <ul>
+        <li>纯静态 HTML/CSS，没有构建步骤</li>
+        <li>代码托管在 GitHub，用 GitHub Pages 发布</li>
+        <li>域名 glamy.cn 在阿里云做 CNAME / A 记录解析</li>
+      </ul>
+      <h2>以后怎么发新文章</h2>
+      <ol>
+        <li>在 <code>posts/</code> 目录下复制一个现有的 html 文件，改内容；</li>
+        <li>在 <code>posts.js</code> 的数组最前面加一条（标题、路径、日期、摘要）；</li>
+        <li><code>git push</code>，一分钟左右线上就能看到。</li>
+      </ol>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 文曜 · <a href="https://github.com/glameyzhou" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+:root {
+  --text: #2c3e50;
+  --text-light: #7f8c8d;
+  --accent: #2563eb;
+  --bg: #fafafa;
+  --card: #ffffff;
+  --border: #e5e7eb;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding: 48px 0 32px;
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+
+.site-title a {
+  font-size: 28px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-subtitle {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+main { padding: 32px 0 64px; }
+
+.post-list h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text-light);
+}
+
+.post-list ul { list-style: none; }
+
+.post-list li {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.15s;
+}
+
+.post-list li:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+.post-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.post-list .post-date {
+  display: block;
+  color: var(--text-light);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.post-content { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 32px; }
+
+.post-content h1 { font-size: 24px; margin-bottom: 8px; }
+.post-content .post-date { color: var(--text-light); font-size: 13px; margin-bottom: 24px; }
+.post-content h2 { font-size: 18px; margin: 24px 0 8px; }
+.post-content p { margin-bottom: 12px; }
+.post-content pre {
+  background: #f4f4f5; border-radius: 6px; padding: 12px; overflow-x: auto;
+  font-size: 13px; margin-bottom: 12px;
+}
+.post-content code { font-family: "SF Mono", Menlo, Consolas, monospace; }
+
+.back-link { display: inline-block; margin-bottom: 20px; color: var(--accent); text-decoration: none; font-size: 14px; }
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  color: var(--text-light);
+  font-size: 13px;
+  background: var(--card);
+}
+
+.site-footer a { color: var(--accent); text-decoration: none; }
